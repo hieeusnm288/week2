@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lora',
+}
+
+.header {
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+}
+
+.header__shopinfo {
+    background-color: black;
+    color           : #fff;
+    display         : flex;
+    justify-content : space-between;
+    padding         : 8px 10px;
+    font-size       : 14px;
+}
+
+.header__shopname {
+    text-align : center;
+    padding    : 10px 0px;
+    font-weight: 500;
+    font-size  : 20px;
+    line-height: 24px;
+}
