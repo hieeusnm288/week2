@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".product-list-1__item-2fr");
   items[0].classList.add("grid-1");
   items[5].classList.add("grid-6");
+
   var splide = new Splide(".splide", {
     perPage: 4,
     type: "loop",
     arrows: false,
     pagination: false,
-    gap: 20,
-    // dot: none,
+    gap: 10,
   });
 
   splide.mount();
