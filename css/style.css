@@ -456,3 +456,87 @@ html {
     font-family: var(--font-family-Poppins);
     line-height: 24px;
 }
+
+.contact-shop {
+    margin-top      : 75px;
+    height          : 750px;
+    background-color: #F6F2EE;
+}
+
+.contact-shop__content {
+    margin         : 0 auto;
+    width          : 1400px;
+    display        : flex;
+    height         : 750px;
+    justify-content: space-around;
+    align-items    : center;
+}
+
+.contact-shop__content_item {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items    : center;
+
+}
+
+.contact-shop__content_item .img1 {
+    position   : absolute;
+    margin-left: 1%;
+    margin-top : -17%;
+}
+
+.contact-shop__content_item .img2 {
+    position   : absolute;
+    margin-left: -12%;
+    margin-top : -4%;
+}
+
+.contact-shop__content_item .img3 {
+    position   : absolute;
+    margin-left: 12%;
+    margin-top : 4%;
+}
+
+.contact-shop__content_item .img4 {
+    position   : absolute;
+    margin-left: 6%;
+    margin-top : -16%;
+}
+
+.contact-shop__content_item .img5 {
+    position   : absolute;
+    margin-left: -9%;
+    margin-top : 2%;
+}
+
+.contact-shop__content_item__title {
+    font-family: var(--font-family-Poppins);
+    font-weight: 500;
+    font-size  : 16px;
+    line-height: 24px;
+    text-align : center;
+}
+
+.contact-shop__content_item__address {
+    font-family  : var(--font-family-lora);
+    font-weight  : 400;
+    font-size    : 32px;
+    line-height  : 56px;
+    text-align   : center;
+    margin-top   : 25px;
+    margin-bottom: 25px;
+}
+
+.contact-shop__content_item__link {
+    font-family    : var(--font-family-Poppins);
+    font-weight    : 500;
+    font-size      : 16px;
+    line-height    : 30px;
+    text-align     : center;
+    border         : 1px solid #D1CECA;
+    width          : fit-content;
+    padding        : 10px 30px;
+    color          : #000;
+    text-decoration: none;
+}
