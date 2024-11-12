@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     font-family: var(--font-family-lora),
 }
@@ -426,4 +427,32 @@ html {
     text-align : center;
     opacity    : 1;
     z-index    : 2;
+}
+
+.our-service {
+    width          : 1400px;
+    margin         : 0 auto;
+    margin-top     : 70px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.service_item {
+    width: 307px;
+}
+
+.service_item__content_heading {
+    font-size  : 20px;
+    font-weight: 400;
+    font-family: var(--font-family-lora);
+    line-height: 32px;
+    margin-top : 20px;
+}
+
+.service_item__content_sub {
+    margin-top : 10px;
+    font-size  : 16px;
+    font-weight: 400;
+    font-family: var(--font-family-Poppins);
+    line-height: 24px;
 }
