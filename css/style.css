@@ -333,3 +333,46 @@ html {
     font-family: var(--font-family-Poppins);
 
 }
+
+/*  */
+
+.inspration {
+    width : 1400px;
+    margin: 0 auto;
+}
+
+.inspration__title {
+    text-align   : center;
+    font-family  : var(--font-family-lora);
+    font-weight  : 400;
+    font-size    : 36px;
+    line-height  : 48px;
+    margin-bottom: 70px;
+}
+
+.inspration__content {
+    display              : grid;
+    grid-template-columns: repeat(4, 291px);
+    gap                  : 80px;
+}
+
+.inspration__content__item {
+    display        : flex;
+    flex-direction : column;
+    gap            : 15px;
+    justify-content: center;
+}
+
+.inspration__content__item__title {
+    font-family: var(--font-family-lora);
+    font-weight: 400;
+    font-size  : 24px;
+    line-height: 38px;
+}
+
+.inspration__content__item__sub {
+    font-family: var(--font-family-Poppins);
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 24px;
+}
