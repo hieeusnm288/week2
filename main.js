@@ -15,8 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
           <img src="${product.img}" alt="Product1" />
           <p class="product-list-1__item__cate">${product.cate}</p>
           <p class="product-list-1__item__name">${product.name}</p>
-          <p class="product-list-1__item__price">$${product.price}</p>
+          ${
+            product.price_dis
+              ? `
+            <div class="product-list-1__item__price">
+            <p class="product-list-1__item__sale-price">$${product.price_dis}</p>
+            <p class="product-list-1__item__original-price">$${product.price}</p> 
+          </div>`
+              : `
+              <p class="product-list-1__item__price">$${product.price}</p>`
+          }
         </div>
+  
     `;
     });
     const items = document.querySelectorAll(".product-list-1__item-2fr");
