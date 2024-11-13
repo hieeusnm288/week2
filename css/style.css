@@ -185,8 +185,8 @@ html {
 
 .product-list-1__item__tag_list {
     position   : absolute;
-    margin-top : -29%;
-    margin-left: 0.5%;
+    margin-top : -550px;
+    margin-left: 10px;
 }
 
 .tag__selling {
@@ -763,7 +763,7 @@ html {
 
     .product-list-1__item__tag_list {
         position   : absolute;
-        margin-top : -330px;
+        margin-top : -350px;
         margin-left: 2%;
     }
 
@@ -1309,7 +1309,7 @@ html {
 
     .product-list-1__item__tag_list {
         position   : absolute;
-        margin-top : -550px;
+        margin-top : -610px;
         margin-left: 10px;
     }
 
