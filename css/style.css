@@ -1138,7 +1138,7 @@ html {
 
     .footer__social {
         display   : flex;
-        gap       : 10px;
+        gap       : 8px;
         margin-top: 10px;
     }
 
