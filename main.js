@@ -27,6 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
               : `
               <p class="product-list-1__item__price">$${product.price}</p>`
           }
+          ${
+            product.tag
+              ? `
+             <div class="product-list-1__item__tag_list">
+              ${product.tag
+                .map((i) => {
+                  if (i === "selling") {
+                    return `<p class="tag__selling">Selling fast!</p>`;
+                  } else if (i === "new") {
+                    return `<p class="tag__new">New</p>`;
+                  } else if (i === "sale") {
+                    return `<p class="tag__sale">-${product.discout}%</p>`;
+                  }
+                })
+                .join("")}
+          `
+              : ``
+          }
         </div>
   
     `;
