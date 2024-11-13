@@ -641,7 +641,6 @@ html {
         display   : flex;
         transition: transform 0.5s ease;
         width     : 200%;
-        /* Allow sliding space */
     }
 
     .header__shopinfo__phone,
@@ -677,6 +676,7 @@ html {
         color           : var(--text-banner-color);
         margin-bottom   : 50px;
         background-size : cover;
+        width           : 100%;
     }
 
     .hero-banner__sologan__title {
@@ -793,6 +793,7 @@ html {
         margin-top   : 70px;
         color        : #b9b9b9;
         margin-bottom: 100px;
+        width        : 100%;
     }
 
     .text-carousel p {
@@ -808,6 +809,7 @@ html {
         flex-direction : column;
         padding        : 0px 15px;
         gap            : 15px;
+        width          : 100%;
     }
 
     .sale-block__content {
@@ -866,7 +868,7 @@ html {
         width   : 100%;
         margin  : 0 auto;
         padding : 0px 15px;
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .inspration__title {
@@ -1084,5 +1086,70 @@ html {
         padding        : 10px 30px;
         color          : #000;
         text-decoration: none;
+    }
+
+    .footer {
+        background-color: #000;
+        color           : var(--text-banner-color);
+        display         : flex;
+        flex-direction  : column;
+        justify-content : left;
+        align-items     : start;
+        padding         : 10px 15px;
+        gap             : 10px;
+    }
+
+    .footer__titlle {
+        font-family: var(--font-family-lora);
+        font-weight: 400;
+        font-size  : 24px;
+        line-height: 33px;
+    }
+
+    .footer__sub {
+        font-family: var(--font-family-Poppins);
+        font-weight: 400;
+        font-size  : 16px;
+        line-height: 24px;
+    }
+
+    .footer__input {
+        display         : flex;
+        align-items     : center;
+        border          : 1px solid #ccc;
+        padding         : 10px;
+        width           : 100%;
+        max-width       : 360px;
+        background-color: white;
+    }
+
+    .footer__input input {
+        border   : none;
+        outline  : none;
+        flex     : 1;
+        font-size: 16px;
+        color    : #666;
+    }
+
+    .footer__input span {
+        font-size: 20px;
+        color    : #666;
+    }
+
+    .footer__social {
+        display   : flex;
+        gap       : 10px;
+        margin-top: 10px;
+    }
+
+    .footer__copyright {
+        font-size  : 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: var(--font-family-Poppins);
+    }
+
+    .footer__copyright span {
+        text-decoration: underline;
     }
 }
