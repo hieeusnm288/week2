@@ -1309,8 +1309,8 @@ html {
 
     .product-list-1__item__tag_list {
         position   : absolute;
-        margin-top : -75%;
-        margin-left: 2%;
+        margin-top : -550px;
+        margin-left: 10px;
     }
 
     /*  */
