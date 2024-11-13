@@ -179,6 +179,12 @@ html {
 
 .roduct-list-1__item__tag {
     position   : absolute;
+    margin-top : -160%;
+    margin-left: 1.5%;
+}
+
+.product-list-1__item__tag_list {
+    position   : absolute;
     margin-top : -29%;
     margin-left: 0.5%;
 }
