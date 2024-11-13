@@ -76,6 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
         perPage: 1.3,
         gap: 5,
       },
+      1023: {
+        perPage: 2,
+        gap: 10,
+      },
     },
   });
 
