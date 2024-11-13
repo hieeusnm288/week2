@@ -272,10 +272,13 @@ html {
     margin-bottom: 100px;
 }
 
-.text-carousel p {
-    display         : inline-block;
-    animation       : scroll-left 20s linear infinite;
-    /* padding-right: 100%; */
+.text-carousel .content__carousel {
+    display      : inline-block;
+    animation    : scroll-left 40s linear infinite;
+    padding-right: 50%;
+    display      : flex;
+    gap          : 20px;
+    align-items  : center;
 }
 
 
@@ -808,9 +811,13 @@ html {
         width        : 100%;
     }
 
-    .text-carousel p {
-        display  : inline-block;
-        animation: scroll-left 20s linear infinite;
+    .text-carousel .content__carousel {
+        display      : inline-block;
+        animation    : scroll-left 20s linear infinite;
+        padding-right: 50%;
+        display      : flex;
+        gap          : 20px;
+        align-items  : center;
     }
 
     .sale-block {
@@ -1330,9 +1337,13 @@ html {
         width        : 100%;
     }
 
-    .text-carousel p {
-        display  : inline-block;
-        animation: scroll-left 20s linear infinite;
+    .text-carousel .content__carousel {
+        display      : inline-block;
+        animation    : scroll-left 20s linear infinite;
+        padding-right: 50%;
+        display      : flex;
+        gap          : 20px;
+        align-items  : center;
     }
 
     .sale-block {
