@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabsCategory = document.querySelectorAll(
     ".product-tab__content__category-text"
   );
+  const arrowLeft = document.getElementById("arrow_left");
+  const arrowRight = document.getElementById("arrow_right");
 
   const renderProduct = (category) => {
     productList[0].innerHTML = "";
@@ -45,6 +47,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".product-list-1__item-2fr");
   items[0].classList.add("grid-1");
   items[5].classList.add("grid-6");
+  let currentSlide = 0;
+  function slideInfo(direction) {
+    const content = document.getElementById("content");
+
+    if (direction === "right") {
+      currentSlide = (currentSlide + 1) % 2; // Loop forward
+    } else if (direction === "left") {
+      currentSlide = (currentSlide - 1 + 2) % 2; // Loop backward
+    }
+
+    // Apply transform based on the currentSlide
+    content.style.transform =
+      currentSlide === 0 ? "translateX(0)" : "translateX(-100%)";
+  }
+
+  arrowLeft.addEventListener("click", () => slideInfo("left"));
+  arrowRight.addEventListener("click", () => slideInfo("right"));
 
   var splide = new Splide(".splide", {
     perPage: 4,
@@ -52,6 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
     arrows: false,
     pagination: false,
     gap: 10,
+    breakpoints: {
+      768: {
+        perPage: 1.3,
+        gap: 5,
+      },
+    },
   });
 
   splide.mount();
