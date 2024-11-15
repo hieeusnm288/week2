@@ -90,6 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     gap: 10,
     breakpoints: {
+      320: {
+        perPage: 1,
+        gap: 5,
+      },
       768: {
         perPage: 1.3,
         gap: 5,
