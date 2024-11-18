@@ -870,6 +870,7 @@ html {
         gap: 10px;
         text-transform: uppercase;
         width: 100%;
+        justify-content: center;
     }
 
     .product-tab__content__category-text:hover {
